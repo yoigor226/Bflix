@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-bar {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 1rem;
+}
+
+#video-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.category-button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #555;
+}
+
+#video-list {
+    margin-top: 2rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.video-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.video-item img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px 5px 0 0;
+}
+
+.video-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.video-item p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.video-item .video-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.video-item .video-actions .like-section {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.video-item .video-actions .like-count {
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.video-item .like-button,
+.video-item .comment-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.video-item .like-button {
+    color: gray;
+}
+
+.video-item .like-button.liked {
+    color: red;
+}
+
+.video-item .comment-button {
+    color: #28a745;
+}
+
+.video-item .like-button:hover,
+.video-item .comment-button:hover {
+    opacity: 0.7;
+}
+
+#video-player {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#player {
+    margin: 2rem 0;
+}
+
+#video-details {
+    margin-top: 1rem;
+}
+
+#like-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#like-button:hover {
+    background-color: #0056b3;
+}
+
+#comments {
+    margin-top: 1rem;
+}
+
+#comment-form {
+    margin-top: 1rem;
+}
+
+#comment-form input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+#comment-form button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #0056b3;
+}
+
+#back-button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-button:hover {
+    background-color: #555;
+}

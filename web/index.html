@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Flix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>B Flix</h1>
+        <input type="text" id="search-bar" placeholder="Rechercher une vidéo...">
+    </header>
+    <main>
+        <section id="video-categories">
+            <button class="category-button" data-category="trending">Tendance</button>
+            <button class="category-button" data-category="new">Nouveautés</button>
+            <button class="category-button" data-category="ACTION">Action</button>
+            <button class="category-button" data-category="DIVERTISSEMENT">Divertissement</button>
+            <button class="category-button" data-category="HORREUR">Horreur</button>
+            <button class="category-button" data-category="MEDIEVALISTE">Médiévaliste</button>
+            <button class="category-button" data-category="DESSIN ANIME">Dessin Animé</button>
+            <button class="category-button" data-category="MANGA">Manga</button>
+        </section>
+        <section id="video-list">
+            <h2 id="category-title">Liste des Vidéos</h2>
+            <div id="videos" class="video-grid"></div>
+        </section>
+        <section id="video-player" style="display: none;">
+            <h2 id="video-title"></h2>
+            <div id="player"></div>
+            <div id="video-details">
+                <button id="like-button">Liker</button>
+                <p>Likes: <span id="like-count">0</span></p>
+                <p>Date de sortie: <span id="release-date"></span></p>
+                <h3>Commentaires</h3>
+                <div id="comments"></div>
+                <form id="comment-form">
+                    <input type="text" id="comment-username" placeholder="Nom d'utilisateur" required>
+                    <input type="text" id="comment-text" placeholder="Votre commentaire" required>
+                    <button type="submit">Ajouter un commentaire</button>
+                </form>
+            </div>
+            <button id="back-button">Retour à la liste</button>
+        </section>
+    </main>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="app.js"></script>
+</body>
+</html>
